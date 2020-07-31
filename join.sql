@@ -68,9 +68,3 @@ SELECT matchid, mdate, COUNT(teamid)
 SELECT matchid, mdate, COUNT(teamid)
   FROM game JOIN goal ON matchid = id 
  WHERE (teamid = 'GER') GROUP BY matchid, mdate
-
--- 
-
-
-
--- 
