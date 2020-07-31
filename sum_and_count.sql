@@ -39,4 +39,3 @@ FROM world x WHERE name IN (SELECT name FROM world y WHERE y.continent = x.conti
 
 SELECT continent
 FROM world x WHERE 100000000 < (SELECT SUM(population) FROM world y WHERE y.continent = x.continent) GROUP BY continent
-
